@@ -1,4 +1,17 @@
 .container{
     background-color: #A0C878 ;
+    
+}
+.commande table{
+    flex-wrap: wrap;
+    margin-left: auto;
 }
 
+table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+td{
+    padding: 1.3%;
+}
