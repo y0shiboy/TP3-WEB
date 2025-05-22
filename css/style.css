@@ -51,8 +51,8 @@ a {
 /*--Macommande--*/
 .commande table {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 table {
@@ -95,4 +95,27 @@ form {
 
 #soumettre:hover {
     background-color: #c6cfbd;
+}
+/*avis*/
+.cartes-avis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1%;
+}
+.temoignage{
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.carte{
+padding: 8%;
+border-radius: 2%;
+background-color: #FAF6E9;
+}
+.carte-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1%;
+    gap: 10%;
 }
