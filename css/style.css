@@ -109,13 +109,14 @@ form {
     margin: auto;
 }
 .carte{
-padding: 8%;
+padding: 5%;
 border-radius: 2%;
 background-color: #FAF6E9;
+margin-bottom: 1.5%;
 }
 .carte-header{
     display: flex;
     align-items: center;
     margin-bottom: 1%;
-    gap: 10%;
+    gap: 3%;
 }
