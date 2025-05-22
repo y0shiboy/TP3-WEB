@@ -29,8 +29,13 @@
                     <legend>
                         <h2>Questions</h2>
                     </legend>
-                    <input type="text" name="txt-name" id="txt-name">
-                    <input type="tel" name="telephone" id="telephone">
+                    <fieldset>
+                        <legend>
+                            Information client
+                        </legend>
+                        <input type="text" name="txt-name" id="txt-name">
+                        <input type="tel" name="telephone" id="telephone">
+                    </fieldset>
                     <fieldset>
                         <legend>détails</legend>
                         <input type="number" name="nbclient" id="nbclient">
@@ -73,6 +78,19 @@
                         <h2>Autres</h2>
                     </legend>
                     <textarea name="commentaire" id="commentaire"></textarea>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        <h2>informations facultatives</h2>
+                    </legend>
+                    <div>
+                        <label for="mail">adresse courriel:</label>
+                        <input type="email" name="mail" id="mail">
+                        
+                    </div>
+
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    <label for="newsletter">je souhaite recevoir les rabais protegrowth par courriel</label>
                 </fieldset>
             </form>
         </main>
