@@ -1,40 +1,45 @@
 /*--header--*/
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 
 }
 
 header nav ul li {
-  display: inline;
+    display: inline;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100%;
 }
+
 .navigation li {
     display: inline-block;
-    margin : 0 10px
+    margin: 0 10px
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
+
 /*general*/
 .btn {
     background-color: #A0C878;
     padding: 10px 15px;
     border-radius: 10px;
 }
+
 .btn:hover {
     background-color: #a3cf77;
 }
@@ -64,4 +69,30 @@ td {
     display: flex;
 
 }
-/*--Réservation--/
+
+/*--Réservation--*/
+fieldset {
+    margin: 1.5%;
+}
+
+input {
+    margin: 1.5%;
+}
+
+.commentaire {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    max-width: 100%;
+}
+
+#soumettre {
+    padding: 1% 1.5% 1% 1.5%;
+    border-radius: 2px;
+}
+
+#soumettre:hover {
+    background-color: #c6cfbd;
+}

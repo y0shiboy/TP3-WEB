@@ -22,6 +22,8 @@
             </nav>
         </div>
     </header>
+
+
     <div class="container">
         <main>
             <form id="form-reservation">
@@ -79,7 +81,7 @@
                         <legend>Expérience</legend>
                         <div>
                             <input type="radio" name="choix-salle" id="choix-salle">
-                            <label for="choix-salle">salle à manger</label>
+                            <label for="choix-salle">Salle à manger</label>
                         </div>
                         <div>
                             <input type="radio" name="choix-terrasse" id="choix-terrasse">
@@ -93,22 +95,27 @@
                     <legend>
                         <h2>Autres</h2>
                     </legend>
-                    <label for="commentaire">Un mot pour la fin ?</label>
-                    <textarea name="commentaire" id="commentaire"></textarea>
+                    <div class="commentaire">
+                        <label for="commentaire">Un mot pour la fin ?</label>
+                        <textarea name="commentaire" id="commentaire"></textarea>
+                    </div>
+
                 </fieldset>
                 <fieldset id="infos-facultatives">
                     <legend>
-                        <h2>informations facultatives</h2>
+                        <h2>Informations facultatives</h2>
                     </legend>
                     <div>
-                        <label for="mail">adresse courriel:</label>
+                        <label for="mail">Adresse courriel:</label>
                         <input type="email" name="mail" id="mail">
 
                     </div>
 
                     <input type="checkbox" name="newsletter" id="newsletter">
-                    <label for="newsletter">je souhaite recevoir les rabais protegrowth par courriel</label>
+                    <label for="newsletter">Je souhaite recevoir les rabais protegrowth par courriel</label>
+
                 </fieldset>
+                <input type="submit" name="soumettre" id="soumettre">
             </form>
         </main>
     </div>
