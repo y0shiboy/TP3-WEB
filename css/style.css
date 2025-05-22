@@ -46,6 +46,10 @@ a {
 
 .container {
     background-color: #A0C878;
+    width: 90%;
+    max-width: 100%;
+    margin: 0 auto;
+
 }
 
 /*--Macommande--*/
@@ -66,8 +70,6 @@ td {
 }
 
 .facture {
-    display: flex;
-
 }
 
 /*--Réservation--*/
@@ -86,6 +88,7 @@ input {
 
 form {
     max-width: 100%;
+
 }
 
 #soumettre {
@@ -96,25 +99,29 @@ form {
 #soumettre:hover {
     background-color: #c6cfbd;
 }
+
 /*avis*/
-.cartes-avis{
+.cartes-avis {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1%;
 }
-.temoignage{
-    padding: 40px 20px;
+
+.temoignage {
     max-width: 1200px;
     margin: auto;
+    background-color: #A0C878;
 }
-.carte{
-padding: 5%;
-border-radius: 2%;
-background-color: #FAF6E9;
-margin-bottom: 1.5%;
+
+.carte {
+    padding: 5%;
+    border-radius: 2%;
+    background-color: white;
+    margin-bottom: 1.5%;
 }
-.carte-header{
+
+.carte-header {
     display: flex;
     align-items: center;
     margin-bottom: 1%;
