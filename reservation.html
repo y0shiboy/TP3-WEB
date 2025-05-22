@@ -25,18 +25,18 @@
     <div class="container">
         <main>
             <form id="form-reservation">
-                <fieldset>
+                <fieldset id="Questions">
                     <legend>
                         <h2>Questions</h2>
                     </legend>
-                    <fieldset>
+                    <fieldset id="info-client">
                         <legend>
                             Information client
                         </legend>
                         <input type="text" name="txt-name" id="txt-name">
                         <input type="tel" name="telephone" id="telephone">
                     </fieldset>
-                    <fieldset>
+                    <fieldset id="details">
                         <legend>détails</legend>
                         <input type="number" name="nbclient" id="nbclient">
                         <input type="date" name="datereservation">
@@ -59,7 +59,7 @@
                         </select>
                     </fieldset>
 
-                    <fieldset>
+                    <fieldset id="experience">
                         <legend>Expérience</legend>
                         <div>
                             <input type="radio" name="choix-salle" id="choix-salle">
@@ -77,9 +77,10 @@
                     <legend>
                         <h2>Autres</h2>
                     </legend>
+                    <label for="commentaire">Un mot pour la fin ?</label>
                     <textarea name="commentaire" id="commentaire"></textarea>
                 </fieldset>
-                <fieldset>
+                <fieldset id="infos-facultatives">
                     <legend>
                         <h2>informations facultatives</h2>
                     </legend>
