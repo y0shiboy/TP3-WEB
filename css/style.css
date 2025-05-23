@@ -161,13 +161,14 @@ form {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-
+}
+.Block-presentation img{
+    border-radius: 15px;
 }
 .left-side-block-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 .left-side-block-1 nav{
     display: flex;
@@ -181,7 +182,10 @@ form {
     padding: 0;
 
 }
-/*avis*/
+@media screen {
+    
+}
+/*index html avis*/
 .cartes-avis {
     display: flex;
     flex-wrap: wrap;
