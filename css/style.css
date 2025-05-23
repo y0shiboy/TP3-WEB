@@ -13,11 +13,11 @@ header div {
 
 #logo {
     width: 150px;
-    height: auto ;
+    height: auto;
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav {
@@ -86,21 +86,26 @@ footer {
 
 
 /*--Macommande--*/
-.container-tableau{
+.container-tableau {
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 20px;
 }
-.commande table , td{
-   text-align: center;
+
+.commande table,
+td {
+    text-align: center;
 }
+
 .commande table {
     border-collapse: collapse;
 }
-.commande{
+
+.commande {
     width: 80%;
 }
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -108,10 +113,12 @@ table {
     font-family: Arial, sans-serif;
 }
 
-td, th{
+td,
+th {
     padding: 12px;
 }
-th{
+
+th {
     background-color: #555;
 }
 
@@ -151,8 +158,9 @@ form {
 #soumettre:hover {
     background-color: #c6cfbd;
 }
+
 /*index.html Block 1*/
-.Block-presentation{
+.Block-presentation {
     background-color: #c6cfbd;
     padding: 15px;
     border-radius: 15px;
@@ -162,19 +170,26 @@ form {
     max-width: 1200px;
     margin: auto;
 }
-.Block-presentation img{
+.right-side-block-2 img{
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 15px;
 }
-.left-side-block-1{
+
+.left-side-block-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.left-side-block-1 nav{
+
+.left-side-block-1 nav {
     display: flex;
     justify-content: center;
-    gap: 15px; 
+    gap: 15px;
 }
+
 .left-side-block-1 nav ul {
     display: flex;
     gap: 20px;
@@ -182,9 +197,7 @@ form {
     padding: 0;
 
 }
-@media screen {
-    
-}
+
 /*index html avis*/
 .cartes-avis {
     display: flex;
@@ -197,7 +210,7 @@ form {
     max-width: 1200px;
     margin: auto;
     background-color: #c6cfbd;
-    padding : 15px;
+    padding: 15px;
     border-radius: 15px;
 }
 
@@ -209,16 +222,19 @@ form {
     margin-bottom: 1.5%;
     text-align: center;
 }
-.carte-texte{
+
+.carte-texte {
     font-style: italic;
     color: #555;
 }
+
 .carte-header {
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.carte-header img{
+
+.carte-header img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -260,6 +276,71 @@ form {
     padding: 20px;
     margin-top: 2%;
 }
-iframe{
+
+iframe {
     border-radius: 15px;
+}
+
+@media screen and (max-width : 760px) {
+    body {
+        padding: 2%;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 2%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navigation li {
+        display: block;
+        text-align: left;
+        width: 100%
+    }
+
+    nav {
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .Block-presentation {
+        flex-direction: column;
+        text-align: center;
+        gap: 3%;
+        padding: 5%;
+    }
+
+    .left-side-block-1,
+    .right-side-block-2 {
+        width: 100%;
+    }
+
+    .cartes-avis {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .carte {
+        width: 90%;
+    }
+
+    .localisation {
+        flex-direction: column;
+        align-items: center;
+        padding: 5%;
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
 }
