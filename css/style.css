@@ -54,7 +54,7 @@ footer{
 }
 .icones-reseaux{
     display: flex;
-    
+
 }
 
 
@@ -113,7 +113,6 @@ input {
 
 form {
     max-width: 100%;
-
 }
 
 #soumettre {
@@ -173,4 +172,11 @@ img{
     height: 100%;
     border-radius: 8px;
     object-fit: cover;
+}
+.localisation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin : 0 auto;
 }
