@@ -31,7 +31,12 @@ nav {
     display: inline-block;
     margin: 0 10px
 }
-
+.menu-mobile{
+    display:none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+}
 a {
     text-decoration: none;
     color: black;
@@ -171,17 +176,19 @@ form {
     max-width: 1200px;
     width: 100%;
     box-sizing: border-box;
-    overflow:hidden; 
-    gap: 3%;   
+    overflow: hidden;
+    gap: 3%;
 }
-.right-side-block-2 img{
+
+.right-side-block-2 img {
     border-radius: 15px;
     max-width: 100%;
     height: auto;
     display: block;
     object-fit: cover;
 }
-.left-side-block-1 .right-side-block-2{
+
+.left-side-block-1 .right-side-block-2 {
     width: 48%;
 }
 
@@ -329,9 +336,10 @@ iframe {
     .right-side-block-2 {
         width: 100%;
     }
-    .right-side-block-2 img{
+
+    .right-side-block-2 img {
         width: 100%;
-        height:auto;
+        height: auto;
     }
 
     .cartes-avis {
@@ -350,25 +358,46 @@ iframe {
         padding: 5%;
         width: 100%;
     }
-    iframe{
+
+    iframe {
         width: 100%;
         height: auto;
     }
 }
-@media screen and (max-width:960px){
-    .left-side-block-1, .right-side-block-2{
+
+@media screen and (max-width:960px) {
+
+    header nav{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+        color: black;
+        padding:10px
+        align-self:
+    }
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-side-block-1,
+    .right-side-block-2 {
         width: 100%;
     }
-    .Block-presentation{
+
+    .Block-presentation {
         flex-direction: column;
         text-align: center;
     }
 }
-@media screen and (max-width:570px){
-    .Block-presentation{
-        padding:5%;
+
+@media screen and (max-width:570px) {
+    .Block-presentation {
+        padding: 5%;
     }
-    .right-side-block-2 img{
+
+    .right-side-block-2 img {
         max-height: 250px;
         object-fit: cover;
     }
