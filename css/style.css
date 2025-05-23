@@ -162,20 +162,27 @@ form {
 /*index.html Block 1*/
 .Block-presentation {
     background-color: #c6cfbd;
-    padding: 15px;
+    padding: 3%;
     border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    overflow:hidden; 
+    gap: 3%;   
 }
 .right-side-block-2 img{
     border-radius: 15px;
     max-width: 100%;
     height: auto;
     display: block;
-    border-radius: 15px;
+    object-fit: cover;
+}
+.left-side-block-1 .right-side-block-2{
+    width: 48%;
 }
 
 .left-side-block-1 {
@@ -322,6 +329,10 @@ iframe {
     .right-side-block-2 {
         width: 100%;
     }
+    .right-side-block-2 img{
+        width: 100%;
+        height:auto;
+    }
 
     .cartes-avis {
         flex-direction: column;
@@ -342,5 +353,23 @@ iframe {
     iframe{
         width: 100%;
         height: auto;
+    }
+}
+@media screen and (max-width:960px){
+    .left-side-block-1, .right-side-block-2{
+        width: 100%;
+    }
+    .Block-presentation{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media screen and (max-width:570px){
+    .Block-presentation{
+        padding:5%;
+    }
+    .right-side-block-2 img{
+        max-height: 250px;
+        object-fit: cover;
     }
 }
