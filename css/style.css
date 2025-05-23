@@ -11,6 +11,9 @@ header div {
     width: 100%;
 
 }
+#logo{
+
+}
 
 header nav ul li {
     display: inline;
@@ -32,6 +35,28 @@ a {
     text-decoration: none;
     color: black;
 }
+/*footer*/
+footer{
+    background-color: #333;
+    color:white;
+    text-align:center;
+    padding: 20px;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+}
+.footer-container2{
+    display: flex;
+    justify-content: space-between;
+}
+.icones-reseaux{
+    display: flex;
+    
+}
+
 
 /*general*/
 .btn {
