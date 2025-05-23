@@ -81,7 +81,9 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    border-radius: 15px;
 }
+
 
 /*--Macommande--*/
 .commande table {
@@ -128,9 +130,36 @@ form {
 #soumettre:hover {
     background-color: #c6cfbd;
 }
-/*index.html partie 1*/
+/*index.html Block 1*/
+.Block-presentation{
+    background-color: #c6cfbd;
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 
+}
+.left-side-block-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.left-side-block-1 nav{
+    display: flex;
+    justify-content: center;
+    gap: 15px; 
+}
+.left-side-block-1 nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+
+}
 /*avis*/
 .cartes-avis {
     display: flex;
@@ -142,7 +171,9 @@ form {
 .temoignage {
     max-width: 1200px;
     margin: auto;
-    background-color: #A0C878;
+    background-color: #c6cfbd;
+    padding : 15px;
+    border-radius: 15px;
 }
 
 .carte {
