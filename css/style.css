@@ -322,10 +322,10 @@ iframe {
     height: 100%;
     min-height: 100%;
     border-radius: 15px;
-    border:none;
+    border: none;
 }
 
-@media screen and (max-width : 760px) {
+@media screen and (max-width : 960px) {
     body {
         padding: 2%;
     }
@@ -382,7 +382,17 @@ iframe {
         width: 90%;
     }
 
-    /*restaurant*/
+    /*restaurant responsive*/
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .big-image-1,
+    .big-image-2 {
+        grid-column: span 2;
+        grid-row: auto;
+    }
 
     .localisation {
         flex-direction: column;
@@ -401,10 +411,9 @@ iframe {
         width: 100%;
         height: 100%;
     }
-}
 
-@media screen and (max-width:960px) {
 
+    /*header responsive*/
     header nav {
         display: none;
     }
@@ -432,7 +441,9 @@ iframe {
     .left-side-block-1,
     .right-side-block-2 {
         width: 100%;
+
     }
+
 
     .Block-presentation {
         flex-direction: column;
@@ -440,7 +451,9 @@ iframe {
     }
 }
 
+
 @media screen and (max-width:570px) {
+    /*index*/
     .Block-presentation {
         padding: 5%;
     }
@@ -448,5 +461,17 @@ iframe {
     .right-side-block-2 img {
         max-height: 250px;
         object-fit: cover;
+    }
+    /*grid*/
+    .grid-container{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    .big-image-1, .big-image-2{
+        grid-column: span 1;
+        grid-row: auto;
+    }
+    .grid-container img{
+        height: auto;
     }
 }
