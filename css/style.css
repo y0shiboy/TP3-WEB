@@ -47,7 +47,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 1%;
 }
 
 .footer-container {
@@ -70,6 +70,9 @@ footer {
 
 
 /*general*/
+main{
+    padding: 5%;
+}
 .btn {
     background-color: #A0C878;
     padding: 10px 15px;
