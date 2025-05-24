@@ -108,7 +108,12 @@ main {
     padding: 20px;
     border-radius: 15px;
 }
-
+h1{
+    font-family: 'poppins', sans-serif;
+}
+h2{
+    font-family: 'Merriweather', serif;
+}
 
 /*--Macommande--*/
 .container-tableau {
