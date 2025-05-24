@@ -5,7 +5,7 @@ header {
     align-items: center;
 }
 
-header div {
+header > div {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -31,12 +31,16 @@ nav {
     display: inline-block;
     margin: 0 10px
 }
-.menu-mobile{
-    display:none;
+
+.menu-mobile {
+    display: none;
     font-size: 30px;
     cursor: pointer;
     margin-left: auto;
+    padding: 10px;
+    color: black;
 }
+
 a {
     text-decoration: none;
     color: black;
@@ -70,9 +74,10 @@ footer {
 
 
 /*general*/
-main{
+main {
     padding: 5%;
 }
+
 .btn {
     background-color: #A0C878;
     padding: 10px 15px;
@@ -370,18 +375,28 @@ iframe {
 
 @media screen and (max-width:960px) {
 
-    header nav{
+    header nav {
         display: none;
     }
-    .menu-mobile{
+
+    .menu-mobile {
         display: block;
+        font-size: 30px;
+        cursor: pointer;
+        margin-left: auto;
         color: black;
-        padding:10px
-        align-self:
+        padding: 10px
     }
-    header{
+
+    header {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    header>div {
+        display: flex;
+        align-items: center;
+        width: 100%;
     }
 
     .left-side-block-1,
