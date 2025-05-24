@@ -70,6 +70,16 @@ footer {
 
 .icones-reseaux {
     display: flex;
+    align-items: center;
+    gap: 10px
+}
+.icones-reseaux a{
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+}
+.icones-reseaux a:hover{
+    color: #A0C878;
 }
 
 
